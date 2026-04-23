@@ -3,194 +3,381 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noeva Labs - Informations légales</title>
-  <meta name="description" content="Pages légales officielles de Noeva Labs by Amine Telecom." />
+  <title>Puissance 4 Online - Noeva Labs</title>
+  <meta name="description" content="Site officiel de Puissance 4 Online par Noeva Labs : présentation de l’application, informations légales, politique de confidentialité, conditions d’utilisation et contact." />
   <style>
     :root {
-      --bg: #0f1220;
-      --card: #171b2e;
-      --text: #f3f4f6;
-      --muted: #b8bfd3;
-      --accent: #6ea8ff;
-      --border: #2b3150;
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #f5f7fb;
+      --muted: #b7c0d1;
+      --accent: #5ea1ff;
+      --accent-2: #7c4dff;
+      --border: #2a3040;
+      --ok: #20c997;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
+      background: linear-gradient(180deg, #0f1115 0%, #151924 100%);
       color: var(--text);
       line-height: 1.6;
     }
 
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
     .container {
-      max-width: 920px;
+      width: 100%;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 32px 20px 48px;
+      padding: 24px;
+    }
+
+    header { padding: 32px 0 20px; }
+
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .top-badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 14px;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .lang-switch {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .lang-switch a {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 24px;
+      align-items: stretch;
+      margin-top: 10px;
     }
 
     .card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 18px;
       padding: 24px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.22);
     }
 
-    h1 {
-      margin: 0 0 12px;
-      font-size: 2rem;
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
     }
 
-    h2 {
-      margin: 0 0 10px;
-      font-size: 1.1rem;
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: bold;
+      border: 1px solid var(--border);
+      transition: 0.2s ease;
     }
 
-    p {
-      margin: 0 0 14px;
-      color: var(--muted);
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: white;
+      border: none;
     }
 
-    .brand {
-      font-weight: 700;
+    .btn-secondary {
+      background: rgba(255,255,255,0.03);
       color: var(--text);
     }
 
-    .intro {
-      margin-bottom: 22px;
+    .btn:hover {
+      transform: translateY(-1px);
+      text-decoration: none;
     }
 
-    .links {
+    .status {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 12px;
+      border-radius: 12px;
+      background: rgba(32, 201, 151, 0.08);
+      border: 1px solid rgba(32, 201, 151, 0.25);
+      color: #baf3df;
+      font-size: 14px;
+    }
+
+    .grid-3 {
       display: grid;
-      gap: 14px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
       margin-top: 24px;
     }
 
-    .link-card {
-      display: block;
-      text-decoration: none;
-      color: var(--text);
-      background: rgba(255,255,255,0.03);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 16px 18px;
-      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 24px;
     }
 
-    .link-card:hover {
-      transform: translateY(-2px);
-      border-color: var(--accent);
-      background: rgba(255,255,255,0.05);
-    }
-
-    .link-title {
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-
-    .link-desc {
+    ul {
+      padding-left: 20px;
       color: var(--muted);
-      font-size: 0.95rem;
     }
 
-    .info-box {
-      margin-top: 26px;
-      padding: 18px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: rgba(255,255,255,0.02);
-    }
+    li { margin-bottom: 8px; }
 
-    .info-box p {
-      margin: 6px 0;
-    }
+    section { margin-top: 40px; }
 
-    .label {
-      color: var(--text);
-      font-weight: 700;
-    }
-
-    .footer {
-      margin-top: 26px;
+    footer {
+      margin-top: 50px;
+      padding: 26px 0 40px;
+      border-top: 1px solid var(--border);
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 14px;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.65rem;
+    .small {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .strong {
+      color: var(--text);
+      font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .grid-3,
+      .grid-2 {
+        grid-template-columns: 1fr;
       }
 
-      .card {
-        padding: 18px;
-      }
+      h1 { font-size: 30px; }
+      h2 { font-size: 24px; }
     }
   </style>
 </head>
 <body>
-  <main class="container">
-    <section class="card">
-      <h1>Noeva Labs</h1>
-
-      <div class="intro">
-        <p>
-          Bienvenue sur l’espace d’informations légales de
-          <span class="brand">Noeva Labs</span>.
-        </p>
-        <p>
-          Ce site regroupe les principales pages légales, de confidentialité,
-          de contact et d’utilisation liées aux activités et applications
-          publiées sous le nom <span class="brand">Noeva Labs</span>.
-        </p>
+  <div class="container">
+    <header>
+      <div class="topbar">
+        <div class="top-badge">Site officiel - Noeva Labs</div>
+        <div class="lang-switch">
+          <a href="index.html">Français</a>
+          <a href="index-en.html">English</a>
+        </div>
       </div>
 
-      <div class="links">
-        <a class="link-card" href="legal.html">
-          <div class="link-title">Mentions légales</div>
-          <div class="link-desc">
-            Informations sur l’éditeur, l’identité de l’entreprise, l’hébergement et les coordonnées de contact.
-          </div>
-        </a>
+      <div class="hero">
+        <div class="card">
+          <h1>Puissance 4 Online</h1>
+          <p>
+            Bienvenue sur le site officiel de l’application <span class="strong">Puissance 4 Online</span>,
+            éditée par <span class="strong">Noeva Labs</span>.
+          </p>
+          <p>
+            L’application a pour objectif de proposer une expérience moderne autour du jeu Puissance 4,
+            avec des parties en ligne, un système de profil joueur, un classement, un historique de parties
+            et, selon les versions, des modes supplémentaires comme le jeu local et le jeu contre IA.
+          </p>
+          <p>
+            Cette page regroupe les informations essentielles concernant l’application, son éditeur,
+            les documents légaux et les moyens de contact.
+          </p>
 
-        <a class="link-card" href="privacy.html">
-          <div class="link-title">Politique de confidentialité</div>
-          <div class="link-desc">
-            Traitement des données personnelles, finalités, conservation et droits des utilisateurs.
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="privacy.html">Politique de confidentialité</a>
+            <a class="btn btn-secondary" href="terms.html">Conditions d’utilisation</a>
+            <a class="btn btn-secondary" href="legal.html">Mentions légales</a>
           </div>
-        </a>
 
-        <a class="link-card" href="terms.html">
-          <div class="link-title">Conditions d’utilisation</div>
-          <div class="link-desc">
-            Règles générales d’utilisation du site, des services et des applications publiées.
-          </div>
-        </a>
+          <div class="status">Application en cours de finalisation - publication Google Play à venir</div>
+        </div>
 
-        <a class="link-card" href="contact.html">
-          <div class="link-title">Contact</div>
-          <div class="link-desc">
-            Moyens de contact pour le support, les demandes légales et les demandes liées aux données personnelles.
-          </div>
-        </a>
+        <div class="card">
+          <h2>Informations rapides</h2>
+          <p><span class="strong">Développeur :</span> Noeva Labs</p>
+          <p><span class="strong">Éditeur :</span> SASU Amine Telecom</p>
+          <p><span class="strong">Président :</span> Amine Lalouani</p>
+          <p><span class="strong">Application :</span> Puissance 4 Online</p>
+          <p><span class="strong">Disponibilité :</span> Bientôt sur Google Play</p>
+          <p><span class="strong">Support :</span> <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a></p>
+          <p><span class="strong">Téléphone :</span> <a href="tel:+33777989310">07 77 98 93 10</a></p>
+          <p><span class="strong">Site principal :</span> <a href="https://sites.google.com/view/noevalabs-by-aminetelecom/accueil" target="_blank" rel="noopener noreferrer">Noeva Labs</a></p>
+        </div>
       </div>
+    </header>
 
-      <div class="info-box">
-        <p><span class="label">Nom développeur public :</span> Noeva Labs</p>
-        <p><span class="label">Éditeur :</span> SASU AMINE TELECOM</p>
-        <p><span class="label">Adresse :</span> 89B Grande Rue, 59100 Roubaix, France</p>
-        <p><span class="label">Email :</span> dadamine86@gmail.com</p>
-        <p><span class="label">Téléphone :</span> 07 77 98 93 10</p>
-      </div>
+    <main>
+      <section>
+        <div class="card">
+          <h2>Présentation de l’application</h2>
+          <p>
+            <span class="strong">Puissance 4 Online</span> est une application mobile dédiée au jeu Puissance 4,
+            pensée pour offrir une expérience claire, moderne et accessible.
+          </p>
+          <p>Selon l’évolution de l’application, les fonctionnalités proposées peuvent inclure :</p>
+          <ul>
+            <li>des parties en ligne contre d’autres joueurs ;</li>
+            <li>un système de profil joueur ;</li>
+            <li>un classement et un suivi de progression ;</li>
+            <li>un historique des parties ;</li>
+            <li>un mode de jeu local sur le même appareil ;</li>
+            <li>un mode d’entraînement ou de jeu contre intelligence artificielle ;</li>
+            <li>des réglages liés au son, aux préférences d’affichage et à l’expérience utilisateur ;</li>
+            <li>l’intégration éventuelle de publicités et/ou d’achats intégrés selon la version publiée.</li>
+          </ul>
+          <p>
+            Certaines fonctionnalités peuvent être ajoutées, modifiées, limitées ou retirées à tout moment
+            afin d’améliorer la stabilité, la sécurité, la conformité ou l’expérience générale de l’application.
+          </p>
+        </div>
+      </section>
 
-      <div class="footer">
-        <p>© Noeva Labs / Amine Telecom — Tous droits réservés.</p>
-      </div>
-    </section>
-  </main>
+      <section>
+        <h2>Documents officiels</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Politique de confidentialité</h3>
+            <p>Informations sur les données collectées, leur usage, leur conservation, ainsi que les droits des utilisateurs.</p>
+            <a href="privacy.html">Lire la politique de confidentialité</a>
+          </div>
+
+          <div class="card">
+            <h3>Conditions d’utilisation</h3>
+            <p>Règles d’utilisation de l’application, responsabilités, comportements interdits, services, comptes et limitations.</p>
+            <a href="terms.html">Lire les conditions d’utilisation</a>
+          </div>
+
+          <div class="card">
+            <h3>Mentions légales</h3>
+            <p>Identité de l’éditeur, coordonnées, informations légales relatives au site et à l’application.</p>
+            <a href="legal.html">Lire les mentions légales</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid-2">
+          <div class="card">
+            <h2>Éditeur</h2>
+            <p><span class="strong">Nom du développeur public :</span> Noeva Labs</p>
+            <p><span class="strong">Société :</span> SASU Amine Telecom</p>
+            <p><span class="strong">Président :</span> Amine Lalouani</p>
+            <p><span class="strong">Capital social :</span> 100 €</p>
+            <p><span class="strong">SIRET :</span> 810 367 110 00014</p>
+            <p><span class="strong">Adresse :</span> 89B Grande Rue, 59100 Roubaix, France</p>
+          </div>
+
+          <div class="card">
+            <h2>Contact</h2>
+            <p>
+              Pour toute question relative à l’application, au support utilisateur, aux documents légaux
+              ou à l’exercice de vos droits, vous pouvez nous contacter :
+            </p>
+            <p><span class="strong">Email :</span> <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a></p>
+            <p><span class="strong">Téléphone :</span> <a href="tel:+33777989310">07 77 98 93 10</a></p>
+            <p><span class="strong">Site web :</span> <a href="https://sites.google.com/view/noevalabs-by-aminetelecom/accueil" target="_blank" rel="noopener noreferrer">https://sites.google.com/view/noevalabs-by-aminetelecom/accueil</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="card">
+          <h2>Disponibilité</h2>
+          <p>L’application <span class="strong">Puissance 4 Online</span> est en cours de préparation pour sa publication.</p>
+          <p>La fiche Google Play Store sera ajoutée dès que l’application sera officiellement validée et publiée.</p>
+          <p class="small">
+            En attendant, les documents légaux disponibles sur ce site servent de référence pour la présentation
+            de l’application et de son éditeur.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="card">
+          <h2>Important</h2>
+          <p>
+            Les fonctionnalités, interfaces, modes de jeu, éléments visuels, systèmes de classement,
+            services publicitaires, achats intégrés, règles d’utilisation et contenus présentés sur ce site
+            peuvent évoluer au fil du développement de l’application.
+          </p>
+          <p>
+            Les pages légales publiées sur ce site ont vocation à accompagner la mise en ligne de l’application
+            et à informer les utilisateurs de manière claire et transparente.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><span class="strong">Noeva Labs</span> - Éditeur : <span class="strong">SASU Amine Telecom</span></p>
+      <p>Adresse : 89B Grande Rue, 59100 Roubaix, France</p>
+      <p>Email : <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a> - Téléphone : <a href="tel:+33777989310">07 77 98 93 10</a></p>
+      <p>
+        Documents :
+        <a href="privacy.html">Politique de confidentialité</a> |
+        <a href="terms.html">Conditions d’utilisation</a> |
+        <a href="legal.html">Mentions légales</a>
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
