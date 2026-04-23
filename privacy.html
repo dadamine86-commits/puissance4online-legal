@@ -3,63 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Politique de confidentialité - Noeva Labs</title>
-  <meta name="description" content="Politique de confidentialité des applications et services Noeva Labs." />
+  <title>Politique de confidentialité - Connect 4 Online - Noeva Labs</title>
+  <meta name="description" content="Politique de confidentialité de l'application Connect 4 Online publiée par Noeva Labs." />
   <style>
     :root {
-      --bg: #0f1220;
-      --card: #171b2e;
-      --text: #f3f4f6;
-      --muted: #b8bfd3;
-      --accent: #6ea8ff;
-      --border: #2b3150;
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #f5f7fb;
+      --muted: #b7c0d1;
+      --accent: #5ea1ff;
+      --border: #2a3040;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
+      background: linear-gradient(180deg, #0f1115 0%, #151924 100%);
       color: var(--text);
       line-height: 1.7;
-    }
-
-    .container {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 32px 20px 48px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    }
-
-    h1 {
-      margin: 0 0 18px;
-      font-size: 2rem;
-    }
-
-    h2 {
-      margin-top: 28px;
-      margin-bottom: 10px;
-      font-size: 1.15rem;
-    }
-
-    p, li {
-      color: var(--muted);
-    }
-
-    ul {
-      padding-left: 20px;
-      margin-top: 8px;
-      margin-bottom: 12px;
     }
 
     a {
@@ -67,181 +30,280 @@
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
     }
 
-    .back {
-      display: inline-block;
-      margin-bottom: 18px;
-      color: var(--accent);
-      font-weight: 700;
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
     }
 
-    .footer {
-      margin-top: 30px;
-      padding-top: 18px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.95rem;
+    .navlinks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
-    strong {
+    .navlinks a {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255,255,255,0.03);
       color: var(--text);
+      font-size: 14px;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.65rem;
-      }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+    }
 
-      .card {
-        padding: 18px;
-      }
+    h1, h2, h3 {
+      line-height: 1.25;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 25px;
+      margin-top: 34px;
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 19px;
+      margin-top: 22px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 20px;
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+
+    li { margin-bottom: 8px; }
+
+    .strong {
+      color: var(--text);
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 26px;
+      padding: 20px 0 10px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      h1 { font-size: 29px; }
+      h2 { font-size: 22px; }
+      h3 { font-size: 18px; }
     }
   </style>
 </head>
 <body>
-  <main class="container">
-    <section class="card">
-      <a class="back" href="index.html">← Retour à l’accueil</a>
+  <div class="container">
+    <div class="topbar">
+      <div class="navlinks">
+        <a href="index.html">Accueil</a>
+        <a href="legal.html">Mentions légales</a>
+        <a href="terms.html">CGU</a>
+        <a href="privacy-en.html">English</a>
+      </div>
+    </div>
 
+    <div class="card">
       <h1>Politique de confidentialité</h1>
 
       <p>
-        La présente politique de confidentialité explique comment <strong>Noeva Labs</strong>,
-        marque publique exploitée par <strong>SASU AMINE TELECOM</strong>, collecte, utilise,
-        conserve et protège les données personnelles dans le cadre de ses sites, applications mobiles
-        et services associés, notamment l’application <strong>Puissance 4 Online</strong>.
+        Cette politique de confidentialité explique comment les données peuvent être collectées,
+        utilisées, stockées et protégées dans le cadre de l’utilisation du site et de l’application
+        <span class="strong">Connect 4 Online</span>, édités par <span class="strong">Noeva Labs</span>.
       </p>
 
       <h2>1. Responsable du traitement</h2>
-      <p><strong>Nom public :</strong> Noeva Labs</p>
-      <p><strong>Entreprise :</strong> SASU AMINE TELECOM</p>
-      <p><strong>Président :</strong> Lalouani Amine</p>
-      <p><strong>Adresse :</strong> 89B Grande Rue, 59100 Roubaix, France</p>
-      <p><strong>E-mail de contact :</strong> <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a></p>
-      <p><strong>Téléphone :</strong> <a href="tel:+33777989310">07 77 98 93 10</a></p>
+      <p><span class="strong">Nom public du développeur :</span> Noeva Labs</p>
+      <p><span class="strong">Société éditrice :</span> SASU Amine Telecom</p>
+      <p><span class="strong">Président :</span> Amine Lalouani</p>
+      <p><span class="strong">Adresse :</span> 89B Grande Rue, 59100 Roubaix, France</p>
+      <p><span class="strong">E-mail de contact :</span> <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a></p>
+      <p><span class="strong">Téléphone :</span> <a href="tel:+33777989310">07 77 98 93 10</a></p>
 
-      <h2>2. Données pouvant être collectées</h2>
-      <p>Selon les fonctionnalités utilisées, les données suivantes peuvent être collectées :</p>
+      <h2>2. Données susceptibles d’être collectées</h2>
+      <p>
+        Selon les fonctionnalités utilisées, l’application peut traiter certaines catégories de données,
+        notamment :
+      </p>
       <ul>
-        <li>identifiants techniques liés au compte invité ou au compte utilisateur ;</li>
-        <li>pseudo choisi dans l’application ;</li>
-        <li>données de profil de jeu ;</li>
-        <li>statistiques de parties, historique, score, classement et progression ;</li>
-        <li>données techniques de connexion, appareil, version de l’application, journaux d’erreurs et de diagnostic ;</li>
-        <li>données liées à l’utilisation des publicités et au consentement publicitaire ;</li>
-        <li>données de contact si l’utilisateur écrit par e-mail ou via un formulaire ;</li>
-        <li>données nécessaires à la sécurité, à la prévention de la fraude et au bon fonctionnement du service.</li>
+        <li>identifiant utilisateur technique généré lors de l’authentification ;</li>
+        <li>pseudo choisi ou généré pour le profil joueur ;</li>
+        <li>données de progression, statistiques de jeu, historique de parties, classement ;</li>
+        <li>données techniques liées à l’appareil, au système, aux performances ou aux erreurs ;</li>
+        <li>données relatives au consentement publicitaire ;</li>
+        <li>données liées à l’utilisation de certaines fonctionnalités en ligne.</li>
       </ul>
+      <p>
+        Certaines données peuvent être collectées automatiquement par des services techniques tiers
+        nécessaires au fonctionnement de l’application.
+      </p>
 
       <h2>3. Finalités du traitement</h2>
-      <p>Les données sont utilisées pour les finalités suivantes :</p>
+      <p>Les données peuvent être utilisées pour :</p>
       <ul>
-        <li>permettre l’accès et l’utilisation de l’application ;</li>
-        <li>créer et gérer un profil joueur ;</li>
-        <li>sauvegarder les parties, statistiques, classements et historiques ;</li>
-        <li>assurer le matchmaking, le jeu en ligne et la synchronisation des données ;</li>
-        <li>améliorer la stabilité, corriger les bugs et sécuriser les services ;</li>
-        <li>gérer les préférences utilisateur, y compris les paramètres de thème, son, vibration et consentement ;</li>
-        <li>diffuser des publicités lorsque cela est applicable ;</li>
-        <li>respecter les obligations légales et répondre aux demandes valides des autorités compétentes ;</li>
-        <li>prévenir les abus, la triche, les usages frauduleux ou contraires aux règles du service.</li>
+        <li>permettre la création et la gestion d’un profil joueur ;</li>
+        <li>faire fonctionner les parties locales et en ligne ;</li>
+        <li>assurer le matchmaking, le classement et l’historique ;</li>
+        <li>améliorer la stabilité, la sécurité et les performances de l’application ;</li>
+        <li>gérer les préférences utilisateur ;</li>
+        <li>afficher ou limiter la publicité selon le consentement et la configuration ;</li>
+        <li>prévenir les abus, la fraude, les usages anormaux ou les manipulations techniques.</li>
       </ul>
 
-      <h2>4. Bases légales</h2>
-      <p>Les traitements reposent notamment sur :</p>
+      <h2>4. Base légale</h2>
+      <p>
+        Les traitements de données peuvent reposer, selon les cas, sur :
+      </p>
       <ul>
         <li>l’exécution du service demandé par l’utilisateur ;</li>
-        <li>l’intérêt légitime de l’éditeur à sécuriser, maintenir et améliorer ses services ;</li>
-        <li>le consentement de l’utilisateur lorsque celui-ci est requis, notamment pour certains traitements publicitaires ;</li>
-        <li>le respect des obligations légales applicables.</li>
+        <li>le respect d’obligations légales ;</li>
+        <li>l’intérêt légitime de l’éditeur pour la sécurité, la maintenance et l’amélioration du service ;</li>
+        <li>le consentement de l’utilisateur lorsque celui-ci est requis, notamment pour certaines finalités publicitaires.</li>
       </ul>
 
-      <h2>5. Publicité et consentement</h2>
+      <h2>5. Services tiers susceptibles d’être utilisés</h2>
       <p>
-        L’application peut afficher des contenus publicitaires. Lorsque cela est requis,
-        un mécanisme de consentement permet à l’utilisateur de gérer ses choix en matière de publicité.
+        L’application peut s’appuyer sur des prestataires techniques tiers pour certaines fonctions,
+        par exemple :
       </p>
-      <p>
-        Certaines données techniques peuvent être utilisées par les partenaires publicitaires
-        pour diffuser, limiter, mesurer ou personnaliser les annonces, conformément à leurs propres règles
-        et selon les choix de consentement de l’utilisateur.
-      </p>
-
-      <h2>6. Destinataires des données</h2>
-      <p>Les données peuvent être traitées par :</p>
       <ul>
-        <li>Noeva Labs / SASU AMINE TELECOM ;</li>
-        <li>les prestataires techniques nécessaires au fonctionnement du service ;</li>
-        <li>les services d’hébergement, de base de données, d’authentification, d’analyse de stabilité et de diffusion publicitaire ;</li>
-        <li>les autorités légalement habilitées, lorsque la loi l’exige.</li>
+        <li>authentification et infrastructure backend ;</li>
+        <li>base de données temps réel ;</li>
+        <li>analyse de stabilité, crashs et diagnostics techniques ;</li>
+        <li>gestion publicitaire ;</li>
+        <li>gestion du consentement utilisateur.</li>
       </ul>
-
-      <h2>7. Conservation des données</h2>
       <p>
-        Les données sont conservées pendant une durée proportionnée aux finalités poursuivies,
-        à la durée d’utilisation du service, aux besoins de sécurité, de support et aux obligations légales.
+        Ces services peuvent traiter certaines données techniques conformément à leurs propres politiques.
+      </p>
+
+      <h2>6. Publicité et consentement</h2>
+      <p>
+        L’application peut afficher de la publicité, selon la version utilisée et selon les choix de l’utilisateur.
       </p>
       <p>
-        Certaines données liées au compte, à la sécurité, à l’historique de jeu ou à la prévention des abus
-        peuvent être conservées tant qu’elles sont nécessaires au bon fonctionnement du service ou à la défense des droits de l’éditeur.
+        Lorsque la réglementation l’exige, une demande de consentement peut être affichée avant
+        l’activation de certaines fonctionnalités publicitaires personnalisées ou non essentielles.
+      </p>
+      <p>
+        L’utilisateur peut modifier ses préférences lorsque cette option est proposée dans l’application.
+      </p>
+
+      <h2>7. Durée de conservation</h2>
+      <p>
+        Les données sont conservées pendant une durée proportionnée aux finalités pour lesquelles elles sont traitées,
+        puis supprimées, anonymisées ou archivées lorsque cela est nécessaire.
+      </p>
+      <p>
+        Certaines données techniques ou de sécurité peuvent être conservées plus longtemps
+        lorsqu’elles sont nécessaires à la prévention de la fraude, à la sécurité du service
+        ou au respect d’obligations légales.
       </p>
 
       <h2>8. Sécurité</h2>
       <p>
-        L’éditeur met en œuvre des mesures raisonnables de sécurité techniques et organisationnelles
-        pour limiter l’accès non autorisé, la perte, l’altération ou la divulgation des données.
+        Des mesures techniques et organisationnelles raisonnables sont mises en place
+        pour protéger les données contre l’accès non autorisé, la perte, l’altération,
+        la divulgation ou l’utilisation abusive.
       </p>
       <p>
-        Malgré ces efforts, aucun service en ligne ne peut garantir une sécurité absolue.
+        Toutefois, aucun système n’étant totalement invulnérable, une sécurité absolue ne peut être garantie.
       </p>
 
       <h2>9. Droits des utilisateurs</h2>
-      <p>Conformément à la réglementation applicable, l’utilisateur peut demander :</p>
+      <p>
+        Conformément à la réglementation applicable, l’utilisateur peut disposer,
+        selon sa situation, des droits suivants :
+      </p>
       <ul>
-        <li>l’accès à ses données personnelles ;</li>
-        <li>la rectification de données inexactes ;</li>
-        <li>la suppression de certaines données lorsque cela est possible ;</li>
-        <li>la limitation de certains traitements ;</li>
-        <li>l’opposition à certains traitements, selon le cas ;</li>
-        <li>le retrait de son consentement lorsque le traitement repose sur celui-ci.</li>
+        <li>droit d’accès ;</li>
+        <li>droit de rectification ;</li>
+        <li>droit d’effacement ;</li>
+        <li>droit à la limitation du traitement ;</li>
+        <li>droit d’opposition ;</li>
+        <li>droit à la portabilité lorsque applicable ;</li>
+        <li>droit de retirer son consentement à tout moment lorsque le traitement repose sur celui-ci.</li>
       </ul>
       <p>
-        Pour exercer ces droits, il convient d’écrire à :
-        <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a>
+        Pour exercer ces droits, l’utilisateur peut contacter :
+        <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a>.
       </p>
 
       <h2>10. Données des mineurs</h2>
       <p>
-        Les services ne sont pas destinés à une collecte volontaire de données auprès d’enfants
-        en violation des règles applicables. Si une donnée a été fournie de manière inappropriée,
-        une demande peut être adressée à l’éditeur pour examen.
+        L’application n’a pas vocation à collecter volontairement des données personnelles
+        auprès de jeunes enfants sans cadre légal approprié.
+      </p>
+      <p>
+        Si l’éditeur est informé qu’une collecte inappropriée a eu lieu,
+        les mesures raisonnables nécessaires pourront être prises.
       </p>
 
-      <h2>11. Liens vers des services tiers</h2>
+      <h2>11. Transferts éventuels</h2>
       <p>
-        L’application ou le site peuvent contenir des liens ou services fournis par des tiers.
-        Ces tiers appliquent leurs propres conditions et politiques de confidentialité.
+        Certains prestataires techniques peuvent héberger ou traiter certaines données
+        en dehors du pays de résidence de l’utilisateur.
+      </p>
+      <p>
+        Lorsque cela s’applique, ces transferts doivent s’effectuer avec des garanties appropriées
+        conformément à la réglementation en vigueur.
       </p>
 
-      <h2>12. Modifications</h2>
+      <h2>12. Mise à jour de la politique</h2>
       <p>
-        La présente politique peut être modifiée à tout moment afin de refléter une évolution du service,
-        des obligations légales ou des outils utilisés. La version publiée sur cette page est la version de référence.
+        La présente politique de confidentialité peut être modifiée à tout moment
+        pour refléter l’évolution du service, des fonctionnalités, des exigences légales
+        ou des outils techniques utilisés.
+      </p>
+      <p>
+        La version publiée sur cette page est la version de référence.
       </p>
 
       <h2>13. Contact</h2>
       <p>
-        Pour toute question relative à la confidentialité ou à l’exercice de vos droits :
-        <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a>
+        Pour toute question relative à la confidentialité, aux données personnelles
+        ou à l’exercice de vos droits, vous pouvez écrire à :
+        <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a>.
       </p>
+    </div>
 
-      <div class="footer">
-        <p>Dernière mise à jour : 23/04/2026</p>
-      </div>
-    </section>
-  </main>
+    <footer>
+      Noeva Labs - SASU Amine Telecom - Connect 4 Online
+    </footer>
+  </div>
 </body>
 </html>
