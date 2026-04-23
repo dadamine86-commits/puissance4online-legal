@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mentions légales - Puissance 4 Online</title>
-  <meta name="description" content="Mentions légales de l'application Puissance 4 Online.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentions légales - Noeva Labs</title>
+  <meta name="description" content="Mentions légales de Noeva Labs et de l'éditeur SASU AMINE TELECOM." />
   <style>
     :root {
       --bg: #0f1220;
       --card: #171b2e;
-      --text: #f4f6ff;
-      --muted: #b8bfdc;
-      --line: #2a335f;
+      --text: #f3f4f6;
+      --muted: #b8bfd3;
       --accent: #6ea8ff;
-      --warn: #ffd166;
+      --border: #2b3150;
     }
 
     * {
       box-sizing: border-box;
     }
 
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #0b0e1a 0%, #12172a 100%);
+      background: var(--bg);
       color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+      color: var(--text);
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: var(--muted);
+    }
+
+    .strong {
+      color: var(--text);
+      font-weight: 700;
     }
 
     a {
@@ -33,233 +68,99 @@
       text-decoration: none;
     }
 
-    .container {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 24px 16px 48px;
+    a:hover {
+      text-decoration: underline;
     }
 
-    .topbar {
-      margin-bottom: 18px;
-    }
-
-    .topbar a {
+    .back {
       display: inline-block;
-      padding: 10px 14px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: #13182b;
-      color: var(--text);
-    }
-
-    .hero, .section, .warning {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 22px;
       margin-bottom: 18px;
-    }
-
-    .warning {
-      border-color: #6b5620;
-      background: #211c10;
-    }
-
-    h1 {
-      margin: 0 0 10px;
-      font-size: 32px;
-      line-height: 1.2;
-    }
-
-    h2 {
-      margin: 0 0 12px;
-      font-size: 22px;
-      line-height: 1.3;
-    }
-
-    p, li {
-      color: var(--muted);
-      line-height: 1.75;
-      font-size: 15px;
-    }
-
-    ul {
-      padding-left: 20px;
-      margin: 10px 0 0;
-    }
-
-    .meta {
-      color: #9da7cf;
-      font-size: 14px;
-      margin-top: 10px;
-    }
-
-    .label {
-      display: inline-block;
-      margin-bottom: 10px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(110, 168, 255, 0.12);
-      border: 1px solid rgba(110, 168, 255, 0.35);
-      color: var(--text);
-      font-size: 13px;
-    }
-
-    .block {
-      margin-top: 12px;
-      padding: 14px 16px;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: #13182b;
-    }
-
-    .block p {
-      margin: 6px 0;
+      color: var(--accent);
+      font-weight: 700;
     }
 
     .footer {
-      margin-top: 28px;
+      margin-top: 30px;
       padding-top: 18px;
-      border-top: 1px solid var(--line);
-      color: #9da7cf;
-      font-size: 14px;
-      line-height: 1.7;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
     }
 
-    strong {
-      color: var(--text);
-    }
-
-    .todo {
-      color: var(--warn);
-      font-weight: bold;
-    }
-
-    @media (max-width: 640px) {
+    @media (max-width: 600px) {
       h1 {
-        font-size: 27px;
+        font-size: 1.65rem;
       }
 
-      h2 {
-        font-size: 20px;
+      .card {
+        padding: 18px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="topbar">
-      <a href="index.html">← Retour à l'accueil légal</a>
-    </div>
+  <main class="container">
+    <section class="card">
+      <a class="back" href="index.html">← Retour à l’accueil</a>
 
-    <section class="hero">
-      <span class="label">Informations légales</span>
       <h1>Mentions légales</h1>
-      <p>
-        La présente page a pour objet d'informer les utilisateurs sur l'éditeur,
-        l'hébergement et les modalités générales d'identification du site public
-        lié à l'application <strong>Puissance 4 Online</strong>.
-      </p>
-      <div class="meta">Dernière mise à jour : 23/04/2026</div>
-    </section>
 
-    <section class="warning">
-      <h2>Important</h2>
-      <p>
-        Les champs ci-dessous marqués <span class="todo">[À COMPLÉTER]</span>
-        doivent être remplacés par vos informations exactes avant publication définitive.
-      </p>
-    </section>
+      <h2>Éditeur du site</h2>
+      <p><span class="strong">Nom public / nom développeur :</span> Noeva Labs</p>
+      <p><span class="strong">Entreprise éditrice :</span> SASU AMINE TELECOM</p>
+      <p><span class="strong">Forme juridique :</span> SAS, société par actions simplifiée</p>
+      <p><span class="strong">Président :</span> Lalouani Amine</p>
+      <p><span class="strong">Capital social :</span> 100 €</p>
+      <p><span class="strong">SIREN :</span> 810 367 110</p>
+      <p><span class="strong">SIRET :</span> 810 367 110 00014</p>
+      <p><span class="strong">Code NAF / APE :</span> 47.41Z</p>
+      <p><span class="strong">Adresse :</span> 89B Grande Rue, 59100 Roubaix, France</p>
+      <p><span class="strong">E-mail :</span> <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a></p>
+      <p><span class="strong">Téléphone :</span> <a href="tel:+33777989310">07 77 98 93 10</a></p>
 
-    <section class="section">
-      <h2>1. Éditeur du site</h2>
-      <div class="block">
-        <p><strong>Nom commercial / développeur public :</strong> Noeva Labs</p>
-        <p><strong>Société éditrice :</strong> SASU Amine Telecom</p>
-        <p><strong>Forme juridique :</strong> SASU</p>
-        <p><strong>Siège social :</strong> <span class="todo">[À COMPLÉTER - adresse complète du siège]</span></p>
-        <p><strong>Capital social :</strong> <span class="todo">[À COMPLÉTER - montant du capital social]</span></p>
-        <p><strong>SIREN / RCS :</strong> <span class="todo">[À COMPLÉTER - SIREN ou RCS exact]</span></p>
-        <p><strong>Numéro de TVA intracommunautaire :</strong> <span class="todo">[À COMPLÉTER si applicable]</span></p>
-        <p><strong>Adresse e-mail de contact :</strong> <span class="todo">[À COMPLÉTER]</span></p>
-        <p><strong>Téléphone :</strong> <span class="todo">[À COMPLÉTER]</span></p>
+      <h2>Nom du site</h2>
+      <p>
+        Le présent site constitue l’espace d’information légale de <span class="strong">Noeva Labs</span>,
+        incluant les pages d’information, de confidentialité et de contact liées aux applications et services publiés sous ce nom.
+      </p>
+
+      <h2>Hébergement</h2>
+      <p>
+        Ce site est hébergé via les services de Google Sites / Google.
+      </p>
+      <p>
+        L’éditeur peut modifier l’hébergement du site à tout moment, sans que cela n’affecte la validité des présentes mentions légales.
+      </p>
+
+      <h2>Propriété intellectuelle</h2>
+      <p>
+        Tous les contenus présents sur ce site, notamment les textes, éléments visuels, logos, graphismes, noms, marques,
+        icônes, documents et éléments téléchargeables, sont protégés par le droit applicable à la propriété intellectuelle.
+      </p>
+      <p>
+        Sauf autorisation écrite préalable, toute reproduction, représentation, adaptation, diffusion ou exploitation,
+        totale ou partielle, est interdite.
+      </p>
+
+      <h2>Responsabilité</h2>
+      <p>
+        L’éditeur s’efforce de fournir des informations aussi exactes que possible. Toutefois, il ne garantit pas l’absence
+        d’erreurs, d’omissions ou d’indisponibilités temporaires.
+      </p>
+      <p>
+        L’utilisateur reste seul responsable de l’usage qu’il fait des informations disponibles sur le site.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Pour toute question relative au site, aux applications publiées, aux données personnelles ou à une demande légale,
+        vous pouvez écrire à : <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a>
+      </p>
+
+      <div class="footer">
+        <p>Dernière mise à jour : 23/04/2026</p>
       </div>
     </section>
-
-    <section class="section">
-      <h2>2. Directeur de la publication</h2>
-      <div class="block">
-        <p><strong>Directeur de la publication :</strong> <span class="todo">[À COMPLÉTER - nom et prénom du représentant légal]</span></p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>3. Hébergement</h2>
-      <div class="block">
-        <p><strong>Hébergeur :</strong> GitHub, Inc.</p>
-        <p><strong>Adresse :</strong> 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States</p>
-        <p><strong>Site web :</strong> <a href="https://github.com/" target="_blank" rel="noopener noreferrer">https://github.com/</a></p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>4. Objet du site</h2>
-      <p>
-        Ce site a vocation à publier les pages légales, d'information et de conformité
-        relatives à l'application <strong>Puissance 4 Online</strong>, notamment
-        les mentions légales, la politique de confidentialité et les conditions d'utilisation.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>5. Propriété intellectuelle</h2>
-      <p>
-        Sauf mention contraire, les contenus présents sur ce site et liés à l'application
-        <strong>Puissance 4 Online</strong>, y compris les textes, éléments graphiques,
-        logos, interfaces, structures et contenus originaux, sont protégés par les règles
-        applicables en matière de propriété intellectuelle.
-      </p>
-      <p>
-        Toute reproduction, diffusion, adaptation ou exploitation non autorisée,
-        totale ou partielle, est interdite sauf autorisation écrite préalable.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>6. Responsabilité</h2>
-      <p>
-        L'éditeur s'efforce de fournir des informations aussi claires et exactes que possible.
-        Toutefois, il ne garantit pas l'exactitude, l'exhaustivité ou l'absence d'erreur
-        sur l'ensemble des contenus publiés.
-      </p>
-      <p>
-        L'utilisation du site et des informations qui y figurent relève de la seule
-        responsabilité de l'utilisateur.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>7. Données personnelles</h2>
-      <p>
-        Les informations relatives au traitement des données personnelles sont détaillées
-        dans la <a href="privacy.html">Politique de confidentialité</a>.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>8. Contact</h2>
-      <div class="block">
-        <p>
-          Pour toute demande relative au site ou à l'application, vous pouvez écrire à :
-          <span class="todo">[À COMPLÉTER - email de contact]</span>
-        </p>
-      </div>
-    </section>
-
-    <div class="footer">
-      <div><strong>Puissance 4 Online</strong> - Mentions légales</div>
-      <div><a href="index.html">Retour à la page d'accueil légale</a></div>
-    </div>
-  </div>
+  </main>
 </body>
 </html>
