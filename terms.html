@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conditions d'utilisation - Puissance 4 Online</title>
-  <meta name="description" content="Conditions d'utilisation de l'application Puissance 4 Online.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions Générales d’Utilisation - Connect 4 Online - Noeva Labs</title>
+  <meta name="description" content="Conditions Générales d’Utilisation de l’application Connect 4 Online publiée par Noeva Labs." />
   <style>
     :root {
-      --bg: #0f1220;
-      --card: #171b2e;
-      --text: #f4f6ff;
-      --muted: #b8bfdc;
-      --line: #2a335f;
-      --accent: #6ea8ff;
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #f5f7fb;
+      --muted: #b7c0d1;
+      --accent: #5ea1ff;
+      --border: #2a3040;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #0b0e1a 0%, #12172a 100%);
+      background: linear-gradient(180deg, #0f1115 0%, #151924 100%);
       color: var(--text);
+      line-height: 1.7;
     }
 
     a {
@@ -32,276 +30,334 @@
       text-decoration: none;
     }
 
+    a:hover { text-decoration: underline; }
+
     .container {
+      width: 100%;
       max-width: 980px;
       margin: 0 auto;
-      padding: 24px 16px 48px;
+      padding: 24px;
     }
 
     .topbar {
-      margin-bottom: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
     }
 
-    .topbar a {
-      display: inline-block;
-      padding: 10px 14px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: #13182b;
+    .navlinks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .navlinks a {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255,255,255,0.03);
       color: var(--text);
+      font-size: 14px;
     }
 
-    .hero, .section {
+    .card {
       background: var(--card);
-      border: 1px solid var(--line);
+      border: 1px solid var(--border);
       border-radius: 18px;
-      padding: 22px;
-      margin-bottom: 18px;
+      padding: 26px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+      margin-top: 0;
     }
 
     h1 {
-      margin: 0 0 10px;
-      font-size: 32px;
-      line-height: 1.2;
+      font-size: 34px;
+      margin-bottom: 20px;
     }
 
     h2 {
-      margin: 0 0 12px;
-      font-size: 22px;
-      line-height: 1.3;
+      font-size: 25px;
+      margin-top: 34px;
+      margin-bottom: 14px;
     }
 
-    p, li {
+    h3 {
+      font-size: 19px;
+      margin-top: 22px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0 0 16px;
       color: var(--muted);
-      line-height: 1.75;
-      font-size: 15px;
     }
 
     ul {
       padding-left: 20px;
-      margin: 10px 0 0;
+      color: var(--muted);
+      margin: 0 0 16px;
     }
 
-    .meta {
-      color: #9da7cf;
-      font-size: 14px;
-      margin-top: 10px;
-    }
+    li { margin-bottom: 8px; }
 
-    .footer {
-      margin-top: 28px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-      color: #9da7cf;
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    strong {
+    .strong {
       color: var(--text);
+      font-weight: bold;
     }
 
-    @media (max-width: 640px) {
-      h1 {
-        font-size: 27px;
-      }
+    footer {
+      margin-top: 26px;
+      padding: 20px 0 10px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
 
-      h2 {
-        font-size: 20px;
-      }
+    @media (max-width: 900px) {
+      h1 { font-size: 29px; }
+      h2 { font-size: 22px; }
+      h3 { font-size: 18px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="topbar">
-      <a href="index.html">← Retour à l'accueil légal</a>
+      <div class="navlinks">
+        <a href="index.html">Accueil</a>
+        <a href="legal.html">Mentions légales</a>
+        <a href="privacy.html">Politique de confidentialité</a>
+        <a href="terms-en.html">English</a>
+      </div>
     </div>
 
-    <section class="hero">
-      <h1>Conditions d'utilisation</h1>
-      <p>
-        Les présentes conditions d'utilisation régissent l'accès et l'utilisation
-        de l'application <strong>Puissance 4 Online</strong>.
-      </p>
-      <div class="meta">Dernière mise à jour : 23/04/2026</div>
-    </section>
+    <div class="card">
+      <h1>Conditions Générales d’Utilisation</h1>
 
-    <section class="section">
-      <h2>1. Objet</h2>
       <p>
-        L'application <strong>Puissance 4 Online</strong> permet notamment
-        l'accès à des fonctionnalités de jeu, à des profils utilisateurs,
-        à des parties locales ou en ligne, à des statistiques, à un historique
-        et à des éléments de classement selon les fonctionnalités disponibles.
+        Les présentes Conditions Générales d’Utilisation, ci-après les
+        <span class="strong">« CGU »</span>, encadrent l’accès et l’utilisation
+        du site et de l’application <span class="strong">Connect 4 Online</span>,
+        publiés sous le nom <span class="strong">Noeva Labs</span>.
       </p>
-    </section>
 
-    <section class="section">
-      <h2>2. Acceptation</h2>
-      <p>
-        En utilisant l'application, l'utilisateur reconnaît avoir pris connaissance
-        des présentes conditions et les accepter sans réserve.
-      </p>
-      <p>
-        Si l'utilisateur n'accepte pas ces conditions, il doit cesser d'utiliser
-        l'application.
-      </p>
-    </section>
+      <h2>1. Éditeur du service</h2>
+      <p><span class="strong">Nom public du développeur :</span> Noeva Labs</p>
+      <p><span class="strong">Société éditrice :</span> SASU Amine Telecom</p>
+      <p><span class="strong">Président :</span> Amine Lalouani</p>
+      <p><span class="strong">Adresse :</span> 89B Grande Rue, 59100 Roubaix, France</p>
+      <p><span class="strong">SIRET :</span> 810 367 110 00014</p>
+      <p><span class="strong">Capital social :</span> 100 euros</p>
+      <p><span class="strong">E-mail :</span> <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a></p>
+      <p><span class="strong">Téléphone :</span> <a href="tel:+33777989310">07 77 98 93 10</a></p>
+      <p><span class="strong">Site web :</span> <a href="https://sites.google.com/view/noevalabs-by-aminetelecom/accueil" target="_blank" rel="noopener noreferrer">Noeva Labs</a></p>
 
-    <section class="section">
-      <h2>3. Accès au service</h2>
+      <h2>2. Objet</h2>
       <p>
-        L'application peut être accessible gratuitement ou comporter certaines
-        fonctionnalités, contenus, services ou affichages publicitaires variables
-        selon les versions, les appareils, les zones géographiques ou les évolutions
-        du service.
+        Les présentes CGU définissent les conditions dans lesquelles l’utilisateur
+        peut accéder au site, à l’application et aux fonctionnalités proposées,
+        notamment les fonctionnalités de jeu, de profil, de classement, d’historique,
+        de paramètres, ainsi que certaines fonctions en ligne ou hors ligne.
       </p>
-      <p>
-        L'éditeur ne garantit pas un accès continu, permanent, sans erreur ni sans interruption.
-      </p>
-    </section>
 
-    <section class="section">
-      <h2>4. Compte utilisateur</h2>
+      <h2>3. Acceptation</h2>
       <p>
-        Certaines fonctionnalités peuvent nécessiter la création ou l'utilisation
-        d'un compte, y compris un compte invité, un identifiant technique ou
-        un pseudo utilisateur.
+        L’accès au service et son utilisation impliquent l’acceptation pleine et entière
+        des présentes CGU par l’utilisateur.
       </p>
       <p>
-        L'utilisateur s'engage à fournir des informations valides, à ne pas usurper
-        l'identité d'un tiers et à ne pas utiliser de contenu illicite, offensant
-        ou trompeur comme pseudo ou élément d'identification.
+        Si l’utilisateur n’accepte pas tout ou partie des présentes CGU,
+        il doit s’abstenir d’utiliser le service.
       </p>
-    </section>
 
-    <section class="section">
-      <h2>5. Règles de conduite</h2>
-      <p>L'utilisateur s'engage à ne pas :</p>
+      <h2>4. Accès au service</h2>
+      <p>
+        Le service est accessible, sous réserve de disponibilité technique,
+        sur appareil compatible et via une connexion adaptée lorsque certaines
+        fonctionnalités nécessitent un accès réseau.
+      </p>
+      <p>
+        Certaines fonctions peuvent être disponibles hors ligne, tandis que d’autres
+        nécessitent l’accès à des services tiers, à une authentification technique
+        ou à une infrastructure en ligne.
+      </p>
+
+      <h2>5. Compte utilisateur</h2>
+      <p>
+        Certaines fonctionnalités peuvent nécessiter la création ou l’utilisation
+        d’un identifiant technique, d’un profil joueur, d’un pseudo ou d’un compte.
+      </p>
+      <p>
+        L’utilisateur s’engage à fournir des informations exactes, loyales et non trompeuses
+        lorsqu’une saisie lui est demandée.
+      </p>
+      <p>
+        L’utilisateur demeure responsable de l’utilisation faite de son compte,
+        de son profil et de ses identifiants.
+      </p>
+
+      <h2>6. Règles générales d’utilisation</h2>
+      <p>L’utilisateur s’engage à utiliser le service de manière loyale, légale et raisonnable.</p>
+      <p>Il est notamment interdit de :</p>
       <ul>
-        <li>tricher, contourner les règles du jeu ou exploiter des failles ;</li>
-        <li>perturber le fonctionnement normal du service ;</li>
-        <li>utiliser des bots, scripts, outils automatisés ou moyens frauduleux non autorisés ;</li>
-        <li>porter atteinte aux droits d'autrui, à l'ordre public ou aux lois applicables ;</li>
-        <li>usurper l'identité d'une autre personne ;</li>
-        <li>publier, transmettre ou afficher un contenu injurieux, haineux, violent, illicite ou trompeur.</li>
+        <li>tricher, détourner, automatiser ou manipuler le fonctionnement normal du jeu ;</li>
+        <li>exploiter une faille, un bug ou une erreur technique à des fins abusives ;</li>
+        <li>usurper l’identité d’un tiers ou utiliser un pseudo illicite, injurieux ou trompeur ;</li>
+        <li>porter atteinte aux serveurs, à l’infrastructure ou à la sécurité du service ;</li>
+        <li>perturber l’expérience des autres utilisateurs ;</li>
+        <li>extraire, copier, revendre ou réutiliser tout ou partie du service sans autorisation ;</li>
+        <li>utiliser des scripts, bots, outils d’injection, émulateurs modifiés ou méthodes de contournement non autorisées.</li>
       </ul>
-    </section>
 
-    <section class="section">
-      <h2>6. Matchmaking, parties et classement</h2>
+      <h2>7. Fonctionnalités de jeu</h2>
       <p>
-        Les fonctionnalités de jeu en ligne, d'historique, de points, d'ELO,
-        de rangs, de classement, de récompenses ou d'événements peuvent évoluer
-        à tout moment.
+        Le service peut proposer différents modes ou fonctionnalités, y compris
+        des parties locales, des parties contre intelligence artificielle,
+        des parties en ligne, des classements, des historiques et d’autres éléments évolutifs.
       </p>
       <p>
-        L'éditeur se réserve le droit de modifier les règles, l'équilibrage,
-        les systèmes de progression, les modes de jeu, les limitations, les gains,
-        les pénalités ou les conditions d'accès afin d'assurer la cohérence,
-        la sécurité et le bon fonctionnement du service.
+        Les fonctionnalités disponibles peuvent évoluer, être modifiées,
+        suspendues ou retirées à tout moment, sans que cela constitue un droit acquis
+        au maintien strict et permanent d’un mode, d’un score, d’un classement
+        ou d’une mécanique de jeu.
       </p>
-    </section>
 
-    <section class="section">
-      <h2>7. Publicité et contenus tiers</h2>
+      <h2>8. Classements, scores et progression</h2>
       <p>
-        L'application peut intégrer des contenus, services ou technologies de tiers,
-        y compris des publicités. L'éditeur n'est pas responsable des contenus,
-        offres, liens, services ou politiques externes accessibles par l'intermédiaire
-        de ces tiers.
+        Les scores, classements, statistiques, historiques et éléments de progression
+        sont fournis à titre indicatif selon les règles internes du service.
       </p>
-    </section>
-
-    <section class="section">
-      <h2>8. Suspension, limitation, suppression</h2>
       <p>
-        En cas d'abus, de fraude, de triche, de comportement contraire aux présentes
-        conditions ou de nécessité technique, l'éditeur peut, sans préavis :
+        L’éditeur se réserve le droit de corriger, réinitialiser, supprimer, ajuster
+        ou recalculer certains éléments de progression, notamment en cas de bug,
+        d’abus, de fraude, de changement d’équilibrage, d’erreur technique
+        ou d’évolution du jeu.
+      </p>
+
+      <h2>9. Comportements interdits et modération</h2>
+      <p>
+        En cas de comportement abusif, frauduleux, anormal, illicite ou contraire
+        aux présentes CGU, l’éditeur peut prendre toute mesure utile,
+        notamment :
       </p>
       <ul>
-        <li>limiter certaines fonctionnalités ;</li>
-        <li>suspendre temporairement l'accès au service ;</li>
-        <li>réinitialiser certains éléments de progression si nécessaire ;</li>
-        <li>supprimer ou bloquer un compte, un pseudo ou un accès utilisateur.</li>
+        <li>avertissement ;</li>
+        <li>suppression ou modification de certains contenus ou données ;</li>
+        <li>restriction temporaire d’accès ;</li>
+        <li>suspension ;</li>
+        <li>suppression du compte ou du profil concerné ;</li>
+        <li>annulation de parties, scores, récompenses ou progressions concernées.</li>
       </ul>
-    </section>
 
-    <section class="section">
-      <h2>9. Propriété intellectuelle</h2>
+      <h2>10. Publicité et services tiers</h2>
       <p>
-        L'application, ses éléments visuels, son interface, ses textes,
-        ses graphismes, son nom, sa structure, son code, ses bases,
-        ses contenus et ses composants sont protégés par les règles applicables
-        en matière de propriété intellectuelle.
+        Le service peut intégrer des contenus publicitaires, des outils de mesure,
+        des services d’authentification, des bases de données, des outils de diagnostic
+        ou d’autres services tiers nécessaires au fonctionnement du produit.
       </p>
       <p>
-        Sauf autorisation expresse, toute reproduction, extraction, diffusion,
-        adaptation, revente ou exploitation non autorisée est interdite.
+        L’utilisateur reconnaît que certaines fonctionnalités peuvent dépendre
+        de ces prestataires tiers et de leur disponibilité.
       </p>
-    </section>
 
-    <section class="section">
-      <h2>10. Disponibilité et évolution</h2>
+      <h2>11. Disponibilité</h2>
       <p>
-        L'éditeur peut à tout moment modifier, suspendre, limiter ou arrêter
-        tout ou partie de l'application, de ses fonctionnalités ou de ses services,
-        de manière temporaire ou définitive, sans que cela n'ouvre droit à indemnisation.
+        L’éditeur s’efforce d’assurer un accès normal au service,
+        mais ne garantit pas une disponibilité continue, permanente
+        ou sans interruption.
       </p>
-    </section>
+      <p>
+        Le service peut être temporairement indisponible en raison d’une maintenance,
+        d’un incident technique, d’une mise à jour, d’un problème réseau,
+        d’un fournisseur tiers ou de toute autre cause raisonnable.
+      </p>
 
-    <section class="section">
-      <h2>11. Responsabilité</h2>
+      <h2>12. Mises à jour et modifications</h2>
       <p>
-        L'application est fournie en l'état. L'éditeur ne garantit pas
-        l'absence de bug, d'interruption, de perte de données, d'indisponibilité
-        ou d'erreur.
+        L’application, le site, les contenus, les fonctionnalités,
+        les règles du jeu, la présentation, les systèmes de progression,
+        les modes et les présentes CGU peuvent être modifiés à tout moment.
       </p>
       <p>
-        Dans la mesure permise par la loi, l'éditeur ne pourra être tenu responsable
-        des dommages indirects, pertes d'exploitation, pertes de données, pertes de chance
-        ou conséquences liées à l'utilisation ou à l'impossibilité d'utiliser l'application.
+        L’utilisateur est invité à consulter régulièrement la version en vigueur
+        des présentes CGU.
       </p>
-    </section>
 
-    <section class="section">
-      <h2>12. Données personnelles</h2>
+      <h2>13. Propriété intellectuelle</h2>
       <p>
-        Le traitement éventuel des données personnelles est décrit dans la
-        <a href="privacy.html">Politique de confidentialité</a>.
+        Sauf mention contraire, les éléments du service, notamment les textes,
+        interfaces, visuels, logos, éléments graphiques, structure, conception,
+        code, organisation et contenus, sont protégés par le droit applicable
+        à la propriété intellectuelle.
       </p>
-    </section>
-
-    <section class="section">
-      <h2>13. Modification des conditions</h2>
       <p>
-        Les présentes conditions peuvent être modifiées à tout moment.
-        La version la plus récente publiée sur cette page fait foi.
+        Toute reproduction, adaptation, diffusion, extraction, publication
+        ou exploitation non autorisée de tout ou partie du service
+        est interdite.
       </p>
-    </section>
 
-    <section class="section">
-      <h2>14. Droit applicable</h2>
+      <h2>14. Responsabilité</h2>
       <p>
-        Sauf disposition légale impérative contraire, les présentes conditions
-        sont régies par le droit français.
+        L’éditeur met en œuvre des moyens raisonnables pour proposer un service fonctionnel,
+        mais ne saurait garantir l’absence totale d’erreur, de bug, de perte de données,
+        d’interruption, d’incompatibilité, de retard, de défaut d’affichage
+        ou de fonctionnement.
       </p>
-    </section>
-
-    <section class="section">
-      <h2>15. Contact</h2>
       <p>
-        Pour toute question relative aux présentes conditions d'utilisation,
-        l'utilisateur peut contacter l'éditeur à l'adresse qui sera indiquée
-        dans les mentions légales.
+        L’utilisateur utilise le service sous sa responsabilité.
       </p>
-    </section>
+      <p>
+        Dans les limites autorisées par la loi, l’éditeur ne pourra être tenu responsable
+        des dommages indirects, pertes d’exploitation, pertes de données,
+        pertes d’opportunité, indisponibilités, dysfonctionnements de terminaux,
+        problèmes de réseau, erreurs de services tiers ou conséquences liées
+        à une mauvaise utilisation du service.
+      </p>
 
-    <div class="footer">
-      <div><strong>Puissance 4 Online</strong> - Conditions d'utilisation</div>
-      <div><a href="index.html">Retour à la page d'accueil légale</a></div>
+      <h2>15. Suspension ou arrêt du service</h2>
+      <p>
+        L’éditeur peut suspendre, restreindre, modifier ou arrêter tout ou partie du service,
+        de manière temporaire ou définitive, à tout moment, notamment pour motif technique,
+        économique, juridique, de sécurité, de maintenance ou d’évolution du produit.
+      </p>
+
+      <h2>16. Données personnelles</h2>
+      <p>
+        Les règles relatives aux données personnelles sont décrites
+        dans la <a href="privacy.html">Politique de confidentialité</a>.
+      </p>
+
+      <h2>17. Liens externes</h2>
+      <p>
+        Le site ou l’application peuvent contenir des liens vers des services
+        ou sites tiers. L’éditeur n’exerce pas de contrôle général sur ces contenus externes
+        et ne saurait être responsable de leur disponibilité ou de leur contenu.
+      </p>
+
+      <h2>18. Droit applicable</h2>
+      <p>
+        Les présentes CGU sont soumises au droit français,
+        sous réserve des dispositions impératives éventuellement applicables
+        au lieu de résidence du consommateur lorsque la loi le prévoit.
+      </p>
+
+      <h2>19. Contact</h2>
+      <p>
+        Pour toute question relative au service ou aux présentes CGU,
+        vous pouvez écrire à :
+        <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a>.
+      </p>
     </div>
+
+    <footer>
+      Noeva Labs - SASU Amine Telecom - Connect 4 Online
+    </footer>
   </div>
 </body>
 </html>
