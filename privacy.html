@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politique de confidentialité - Puissance 4 Online</title>
-  <meta name="description" content="Politique de confidentialité de l'application Puissance 4 Online.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité - Noeva Labs</title>
+  <meta name="description" content="Politique de confidentialité des applications et services Noeva Labs." />
   <style>
     :root {
       --bg: #0f1220;
       --card: #171b2e;
-      --text: #f4f6ff;
-      --muted: #b8bfdc;
-      --line: #2a335f;
+      --text: #f3f4f6;
+      --muted: #b8bfd3;
       --accent: #6ea8ff;
+      --border: #2b3150;
     }
 
     * {
       box-sizing: border-box;
     }
 
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #0b0e1a 0%, #12172a 100%);
+      background: var(--bg);
       color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+      margin-bottom: 12px;
     }
 
     a {
@@ -32,244 +67,181 @@
       text-decoration: none;
     }
 
-    .container {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 24px 16px 48px;
+    a:hover {
+      text-decoration: underline;
     }
 
-    .topbar {
-      margin-bottom: 18px;
-    }
-
-    .topbar a {
+    .back {
       display: inline-block;
-      padding: 10px 14px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: #13182b;
-      color: var(--text);
-    }
-
-    .hero, .section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 22px;
       margin-bottom: 18px;
-    }
-
-    h1 {
-      margin: 0 0 10px;
-      font-size: 32px;
-      line-height: 1.2;
-    }
-
-    h2 {
-      margin: 0 0 12px;
-      font-size: 22px;
-      line-height: 1.3;
-    }
-
-    p, li {
-      color: var(--muted);
-      line-height: 1.75;
-      font-size: 15px;
-    }
-
-    ul {
-      padding-left: 20px;
-      margin: 10px 0 0;
-    }
-
-    .meta {
-      color: #9da7cf;
-      font-size: 14px;
-      margin-top: 10px;
+      color: var(--accent);
+      font-weight: 700;
     }
 
     .footer {
-      margin-top: 28px;
+      margin-top: 30px;
       padding-top: 18px;
-      border-top: 1px solid var(--line);
-      color: #9da7cf;
-      font-size: 14px;
-      line-height: 1.7;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
     }
 
     strong {
       color: var(--text);
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 600px) {
       h1 {
-        font-size: 27px;
+        font-size: 1.65rem;
       }
 
-      h2 {
-        font-size: 20px;
+      .card {
+        padding: 18px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="topbar">
-      <a href="index.html">← Retour à l'accueil légal</a>
-    </div>
+  <main class="container">
+    <section class="card">
+      <a class="back" href="index.html">← Retour à l’accueil</a>
 
-    <section class="hero">
       <h1>Politique de confidentialité</h1>
-      <p>
-        La présente politique de confidentialité décrit la manière dont
-        l'application <strong>Puissance 4 Online</strong> peut collecter,
-        utiliser, conserver et protéger certaines données lors de son utilisation.
-      </p>
-      <div class="meta">Dernière mise à jour : 23/04/2026</div>
-    </section>
 
-    <section class="section">
-      <h2>1. Éditeur de l'application</h2>
       <p>
-        L'application <strong>Puissance 4 Online</strong> est éditée par
-        <strong>Noeva Labs</strong>.
+        La présente politique de confidentialité explique comment <strong>Noeva Labs</strong>,
+        marque publique exploitée par <strong>SASU AMINE TELECOM</strong>, collecte, utilise,
+        conserve et protège les données personnelles dans le cadre de ses sites, applications mobiles
+        et services associés, notamment l’application <strong>Puissance 4 Online</strong>.
       </p>
-    </section>
 
-    <section class="section">
-      <h2>2. Données pouvant être traitées</h2>
-      <p>
-        Selon les fonctionnalités utilisées, l'application peut traiter les catégories
-        de données suivantes :
-      </p>
+      <h2>1. Responsable du traitement</h2>
+      <p><strong>Nom public :</strong> Noeva Labs</p>
+      <p><strong>Entreprise :</strong> SASU AMINE TELECOM</p>
+      <p><strong>Président :</strong> Lalouani Amine</p>
+      <p><strong>Adresse :</strong> 89B Grande Rue, 59100 Roubaix, France</p>
+      <p><strong>E-mail de contact :</strong> <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a></p>
+      <p><strong>Téléphone :</strong> <a href="tel:+33777989310">07 77 98 93 10</a></p>
+
+      <h2>2. Données pouvant être collectées</h2>
+      <p>Selon les fonctionnalités utilisées, les données suivantes peuvent être collectées :</p>
       <ul>
-        <li>identifiant technique de compte ou identifiant invité ;</li>
-        <li>pseudo choisi par l'utilisateur ;</li>
-        <li>données de progression de jeu, statistiques, historique de parties et classement ;</li>
-        <li>données techniques liées à l'appareil, à l'application et au bon fonctionnement du service ;</li>
-        <li>données liées au consentement publicitaire et à l'affichage de publicités, le cas échéant ;</li>
-        <li>données nécessaires à la sécurité, à la prévention des abus et à la stabilité du service.</li>
+        <li>identifiants techniques liés au compte invité ou au compte utilisateur ;</li>
+        <li>pseudo choisi dans l’application ;</li>
+        <li>données de profil de jeu ;</li>
+        <li>statistiques de parties, historique, score, classement et progression ;</li>
+        <li>données techniques de connexion, appareil, version de l’application, journaux d’erreurs et de diagnostic ;</li>
+        <li>données liées à l’utilisation des publicités et au consentement publicitaire ;</li>
+        <li>données de contact si l’utilisateur écrit par e-mail ou via un formulaire ;</li>
+        <li>données nécessaires à la sécurité, à la prévention de la fraude et au bon fonctionnement du service.</li>
       </ul>
-    </section>
 
-    <section class="section">
       <h2>3. Finalités du traitement</h2>
-      <p>Les données peuvent être utilisées pour :</p>
+      <p>Les données sont utilisées pour les finalités suivantes :</p>
       <ul>
-        <li>permettre l'accès à l'application et aux fonctionnalités de jeu ;</li>
-        <li>créer et gérer un profil utilisateur ou invité ;</li>
-        <li>assurer le matchmaking, les parties en ligne, les classements et l'historique ;</li>
-        <li>améliorer la stabilité, les performances et la sécurité de l'application ;</li>
-        <li>prévenir la fraude, les abus, les triches et les usages contraires aux règles du service ;</li>
-        <li>gérer le consentement publicitaire et, si applicable, afficher des publicités ;</li>
-        <li>respecter les obligations légales applicables.</li>
+        <li>permettre l’accès et l’utilisation de l’application ;</li>
+        <li>créer et gérer un profil joueur ;</li>
+        <li>sauvegarder les parties, statistiques, classements et historiques ;</li>
+        <li>assurer le matchmaking, le jeu en ligne et la synchronisation des données ;</li>
+        <li>améliorer la stabilité, corriger les bugs et sécuriser les services ;</li>
+        <li>gérer les préférences utilisateur, y compris les paramètres de thème, son, vibration et consentement ;</li>
+        <li>diffuser des publicités lorsque cela est applicable ;</li>
+        <li>respecter les obligations légales et répondre aux demandes valides des autorités compétentes ;</li>
+        <li>prévenir les abus, la triche, les usages frauduleux ou contraires aux règles du service.</li>
       </ul>
-    </section>
 
-    <section class="section">
-      <h2>4. Base légale</h2>
-      <p>
-        Les traitements de données reposent, selon les cas, sur :
-      </p>
+      <h2>4. Bases légales</h2>
+      <p>Les traitements reposent notamment sur :</p>
       <ul>
-        <li>l'exécution du service demandé par l'utilisateur ;</li>
-        <li>l'intérêt légitime de l'éditeur pour sécuriser, maintenir et améliorer l'application ;</li>
-        <li>le consentement de l'utilisateur lorsque celui-ci est requis, notamment pour certains usages publicitaires.</li>
+        <li>l’exécution du service demandé par l’utilisateur ;</li>
+        <li>l’intérêt légitime de l’éditeur à sécuriser, maintenir et améliorer ses services ;</li>
+        <li>le consentement de l’utilisateur lorsque celui-ci est requis, notamment pour certains traitements publicitaires ;</li>
+        <li>le respect des obligations légales applicables.</li>
       </ul>
-    </section>
 
-    <section class="section">
       <h2>5. Publicité et consentement</h2>
       <p>
-        L'application peut afficher des publicités. Lorsque la réglementation applicable
-        l'exige, un mécanisme de consentement peut être présenté à l'utilisateur afin
-        de lui permettre d'accepter, de refuser ou de gérer certains choix liés à la publicité.
+        L’application peut afficher des contenus publicitaires. Lorsque cela est requis,
+        un mécanisme de consentement permet à l’utilisateur de gérer ses choix en matière de publicité.
       </p>
       <p>
-        L'utilisateur peut également, lorsque cette option est disponible dans l'application,
-        gérer à nouveau ses choix de confidentialité publicitaire.
+        Certaines données techniques peuvent être utilisées par les partenaires publicitaires
+        pour diffuser, limiter, mesurer ou personnaliser les annonces, conformément à leurs propres règles
+        et selon les choix de consentement de l’utilisateur.
       </p>
-    </section>
 
-    <section class="section">
-      <h2>6. Partage des données</h2>
-      <p>
-        Les données peuvent être traitées par des prestataires techniques utilisés pour
-        le fonctionnement de l'application, tels que des services d'authentification,
-        d'hébergement, de base de données, d'analyse technique, de stabilité, de sécurité
-        ou de publicité.
-      </p>
-      <p>
-        Les données ne sont partagées qu'en cas de nécessité technique, contractuelle,
-        légale ou pour la protection du service et de ses utilisateurs.
-      </p>
-    </section>
+      <h2>6. Destinataires des données</h2>
+      <p>Les données peuvent être traitées par :</p>
+      <ul>
+        <li>Noeva Labs / SASU AMINE TELECOM ;</li>
+        <li>les prestataires techniques nécessaires au fonctionnement du service ;</li>
+        <li>les services d’hébergement, de base de données, d’authentification, d’analyse de stabilité et de diffusion publicitaire ;</li>
+        <li>les autorités légalement habilitées, lorsque la loi l’exige.</li>
+      </ul>
 
-    <section class="section">
-      <h2>7. Durée de conservation</h2>
+      <h2>7. Conservation des données</h2>
       <p>
-        Les données sont conservées pendant une durée nécessaire aux finalités pour
-        lesquelles elles sont traitées, sauf obligation légale contraire ou nécessité
-        particulière liée à la sécurité, à la prévention des abus ou à la résolution de litiges.
+        Les données sont conservées pendant une durée proportionnée aux finalités poursuivies,
+        à la durée d’utilisation du service, aux besoins de sécurité, de support et aux obligations légales.
       </p>
-    </section>
+      <p>
+        Certaines données liées au compte, à la sécurité, à l’historique de jeu ou à la prévention des abus
+        peuvent être conservées tant qu’elles sont nécessaires au bon fonctionnement du service ou à la défense des droits de l’éditeur.
+      </p>
 
-    <section class="section">
       <h2>8. Sécurité</h2>
       <p>
-        Des mesures techniques et organisationnelles raisonnables peuvent être mises en place
-        afin de protéger les données contre l'accès non autorisé, la perte, l'altération,
-        le détournement ou la divulgation non autorisée.
+        L’éditeur met en œuvre des mesures raisonnables de sécurité techniques et organisationnelles
+        pour limiter l’accès non autorisé, la perte, l’altération ou la divulgation des données.
       </p>
       <p>
-        Toutefois, aucun système n'offrant une sécurité absolue, l'éditeur ne peut garantir
-        une inviolabilité totale des transmissions ou des stockages de données.
+        Malgré ces efforts, aucun service en ligne ne peut garantir une sécurité absolue.
       </p>
-    </section>
 
-    <section class="section">
       <h2>9. Droits des utilisateurs</h2>
+      <p>Conformément à la réglementation applicable, l’utilisateur peut demander :</p>
+      <ul>
+        <li>l’accès à ses données personnelles ;</li>
+        <li>la rectification de données inexactes ;</li>
+        <li>la suppression de certaines données lorsque cela est possible ;</li>
+        <li>la limitation de certains traitements ;</li>
+        <li>l’opposition à certains traitements, selon le cas ;</li>
+        <li>le retrait de son consentement lorsque le traitement repose sur celui-ci.</li>
+      </ul>
       <p>
-        Selon la réglementation applicable, l'utilisateur peut disposer de droits d'accès,
-        de rectification, d'effacement, de limitation, d'opposition et, le cas échéant,
-        de portabilité de certaines données le concernant.
+        Pour exercer ces droits, il convient d’écrire à :
+        <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a>
       </p>
-      <p>
-        Toute demande doit être accompagnée d'éléments suffisants permettant de vérifier
-        qu'elle émane bien de la personne concernée.
-      </p>
-    </section>
 
-    <section class="section">
       <h2>10. Données des mineurs</h2>
       <p>
-        L'utilisateur doit s'assurer qu'il est autorisé à utiliser le service au regard
-        de son âge et de la réglementation applicable. Lorsqu'un âge minimum est imposé
-        par le service ou par la loi, l'utilisateur s'engage à le respecter.
+        Les services ne sont pas destinés à une collecte volontaire de données auprès d’enfants
+        en violation des règles applicables. Si une donnée a été fournie de manière inappropriée,
+        une demande peut être adressée à l’éditeur pour examen.
       </p>
-    </section>
 
-    <section class="section">
-      <h2>11. Modifications</h2>
+      <h2>11. Liens vers des services tiers</h2>
       <p>
-        La présente politique de confidentialité peut être modifiée à tout moment afin
-        de refléter une évolution du service, des traitements réalisés ou des exigences légales.
-        La version la plus récente fait foi.
+        L’application ou le site peuvent contenir des liens ou services fournis par des tiers.
+        Ces tiers appliquent leurs propres conditions et politiques de confidentialité.
       </p>
-    </section>
 
-    <section class="section">
-      <h2>12. Contact</h2>
+      <h2>12. Modifications</h2>
       <p>
-        Pour toute question relative à cette politique de confidentialité, l'utilisateur
-        peut contacter l'éditeur à l'adresse qui sera indiquée dans les mentions légales.
+        La présente politique peut être modifiée à tout moment afin de refléter une évolution du service,
+        des obligations légales ou des outils utilisés. La version publiée sur cette page est la version de référence.
       </p>
-    </section>
 
-    <div class="footer">
-      <div><strong>Puissance 4 Online</strong> - Politique de confidentialité</div>
-      <div><a href="index.html">Retour à la page d'accueil légale</a></div>
-    </div>
-  </div>
+      <h2>13. Contact</h2>
+      <p>
+        Pour toute question relative à la confidentialité ou à l’exercice de vos droits :
+        <a href="mailto:dadamine86@gmail.com">dadamine86@gmail.com</a>
+      </p>
+
+      <div class="footer">
+        <p>Dernière mise à jour : 23/04/2026</p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
